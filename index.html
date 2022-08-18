@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>encriptador</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div class="logo-a">
+        <img src="./images/a.png" alt="Write some text"/>
+      </div>
+
+      <form>
+        <textarea class="text-area" placeholder="Ingrese el texto aqui" autocomplete="off" spellcheck="false" id="inputTexto"></textarea>
+      </form>
+
+      <div class="box-right">
+        <div class="box-img">
+          <img src="./images/muneco.png" id="imgDer"/>
+          <div class="box-text">
+            <h1 class="box-text1" id="textoDer">Ningún mensaje fue encontrado<h1>
+          <textarea class="box-text2" placeholder="Ingresa el texto que desees encriptar o desencriptar" id="textoDer2" rows="8" cols="20"></textarea>
+        </div>
+        <button type="button" name="button" id="copiar">Copiar</button>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="icon-description">
+          <span class="iconify" data-icon="bi:exclamation-circle-fill"></span>
+          <div>Solo letras minúsculas y sin acentos</div>
+        </div>
+
+        <button class="btn-encriptar" id="encriptar">Encriptar</button>
+        <button class="btn-desencriptar" id="desencriptar">Desencriptar</button>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
