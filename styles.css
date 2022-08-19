@@ -21,7 +21,7 @@
     height: 500px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 0.05em solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
     color: #0A3871;
@@ -34,21 +34,33 @@
 .box-right {
     float: right;
     background-color: white;
-    border: 2px solid #ccc;
+    border: 0.05em solid #ccc;
     height: 60em;
     width: 25em;
-    margin-top: 2em;
-    margin-bottom: 4em;
-    margin-right: 3.5em;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    margin-right: 3%;
     border-radius: 32px;
-    line-height: 24px;
+    line-height: 2em;
+}
+
+@media (max-width: 1091px) {
+    .box-right {
+        float: left;
+        margin-left: 15%;
+        min-width: 4em;
+    }
+    .text-area {
+        min-width: 5em;
+    }
 }
 
 .box-img {
-    position: absolute;
+    position: relative;
     background-color: white;
-    left: 72%;
-    top: 40%;
+    width: 90%;
+    left: 5%;
+    top: 30%;
 }
 
 .box-img img {
@@ -56,10 +68,11 @@
 } 
 
 #imgDer{
-    margin-top: 20%;
-    width: 90%;
+    margin-top: 1%;
+    margin-left: 16%;
+    margin-bottom: 20%;
+    width: 70%;
     height: auto;
-    left: 1032px;
     top: 283px;
   }
 
@@ -67,7 +80,7 @@
     position: relative;
     text-align: center;
     background-color: white;
-    width: 100%;
+    width:90%;
     left: 0px;
 }
 
@@ -89,7 +102,7 @@
 .buttons {
     display: inline-block;
     flex-direction: row;
-    width: 40%;
+    width: 50%;
     margin-left: 17%;
     margin-top: 3%;
     border-radius: 0px;
@@ -112,10 +125,10 @@
     align-items: flex-start;
     padding: 3.5%;
     border-radius: 24px;
-    border: 1px solid #0A3871;
+    border: 0.05em solid #0A3871;
     background: #0A3871;
     color: white;
-    width: 80%;
+    width: 40%;
     font-size: 1em;
     margin-right: 20px;
 }
@@ -133,10 +146,10 @@
     align-items: flex-start;
     padding: 3.5%;
     border-radius: 24px;
-    border: 1px solid #0A3871;
+    border: 0.05em solid #0A3871;
     background: #D8DFE8;
     color: #0A3871;
-    width: 80%;
+    width: 40%;
     font-size: 1em;
 }
 
@@ -150,12 +163,13 @@
 }
 
 #copiar {
+    position: relative;
+    top: 1em;
     margin-left: 22%;
-    margin-top: 210%;
     padding: 5%;
-    border-radius: 24px;
+    border-radius: 1em;
     border: 1px solid #0A3871;
-    font-size: 16px;
+    font-size: 20px;
     width: 60%;
     height: 7.5%;
     background: #0A3871;
@@ -167,7 +181,7 @@
     border: 3px solid transparent;
     border-radius: 3px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #textoDer2 {
